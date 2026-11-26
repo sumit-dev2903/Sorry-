@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e9ddff" />
+  <title>For Lovely 💜</title>
+  <style>
+    :root {
+      --lavender: #eadfff;
+      --lavender-deep: #cdb5ff;
+      --purple: #7652b8;
+      --ink: #49365f;
+      --soft: #fffaff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Trebuchet MS", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 15%, #fff9ff 0 7%, transparent 26%),
+        radial-gradient(circle at 90% 80%, #d9c5ff 0 5%, transparent 28%),
+        linear-gradient(135deg, #f4edff, #e4d5ff 55%, #f8edff);
+      overflow-x: hidden;
+    }
+    .floaties { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+    .floaties span {
+      position: absolute; bottom: -50px; opacity: .45; font-size: 20px;
+      animation: rise linear infinite;
+    }
+    .floaties span:nth-child(1){left:8%;animation-duration:13s}
+    .floaties span:nth-child(2){left:25%;animation-duration:17s;animation-delay:2s;font-size:15px}
+    .floaties span:nth-child(3){left:48%;animation-duration:15s;animation-delay:5s}
+    .floaties span:nth-child(4){left:70%;animation-duration:19s;animation-delay:1s;font-size:24px}
+    .floaties span:nth-child(5){left:88%;animation-duration:14s;animation-delay:4s}
+    @keyframes rise { to { transform: translateY(-115vh) rotate(25deg); opacity: 0; } }
+    main { position: relative; z-index: 1; width: min(920px, 92%); margin: auto; padding: 28px 0 55px; }
+    .topline { text-align: center; color: #8b70b4; letter-spacing: 3px; font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .hero { text-align: center; padding: 38px 12px 24px; }
+    .heart { font-size: 54px; display: inline-block; filter: drop-shadow(0 8px 12px #b99be8); animation: beat 1.5s ease-in-out infinite; }
+    @keyframes beat { 50% { transform: scale(1.12); } }
+    h1 { font-family: Georgia, serif; font-weight: 500; font-size: clamp(38px, 8vw, 68px); margin: 12px 0; color: #68479d; }
+    .subtitle { font-size: clamp(15px, 3vw, 18px); color: #806b9b; line-height: 1.7; max-width: 600px; margin: auto; }
+    .card {
+      background: rgba(255,255,255,.72); border: 1px solid rgba(255,255,255,.9);
+      box-shadow: 0 18px 55px rgba(103,73,151,.13); border-radius: 28px;
+      padding: clamp(22px, 5vw, 42px); margin: 22px auto; backdrop-filter: blur(10px);
+    }
+    .note { text-align: center; }
+    .note h2 { font: 500 clamp(25px, 5vw, 34px) Georgia, serif; color: #704da4; margin: 0 0 18px; }
+    .note p { font-size: 16px; line-height: 1.9; margin: 12px 0; color: #625174; }
+    .highlight { color: #8a5bc3; font-weight: 800; }
+    .divider { color: #b89cde; letter-spacing: 7px; margin: 22px 0; }
+    .promise { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 25px; }
+    .promise div { background: #f5efff; border-radius: 18px; padding: 16px 10px; font-size: 13px; line-height: 1.6; }
+    .promise b { display: block; font-size: 22px; margin-bottom: 5px; }
+    .question { text-align: center; }
+    .question h2 { font: 500 clamp(26px,5vw,36px) Georgia,serif; color: #704da4; margin: 0 0 10px; }
+    .question p { color: #806b9b; line-height: 1.7; }
+    .buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    button {
+      border: 0; border-radius: 999px; padding: 14px 24px; font-size: 15px;
+      font-weight: 800; cursor: pointer; transition: transform .2s, box-shadow .2s;
+    }
+    button:hover { transform: translateY(-3px); box-shadow: 0 9px 20px #bda5df66; }
+    .yes { color: white; background: linear-gradient(135deg,#a783df,#7953b8); }
+    .later { color: #775b98; background: #f0e7ff; }
+    #reply { display: none; margin: 22px auto 0; padding: 17px; max-width: 520px; border-radius: 18px; background: #f7f0ff; line-height: 1.7; color: #684b8b; }
+    footer { text-align: center; color: #927eaa; font-size: 12px; padding: 18px 0; }
+    @media(max-width:560px) { .promise { grid-template-columns: 1fr; } .promise div { padding: 13px; } .card { border-radius: 23px; } }
+  </style>
+</head>
+<body>
+  <div class="floaties" aria-hidden="true"><span>💜</span><span>♡</span><span>✨</span><span>💜</span><span>♡</span></div>
+  <main>
+    <div class="topline">A little page made with care</div>
+    <header class="hero">
+      <div class="heart">💜</div>
+      <h1>I'm Sorry, Lovely</h1>
+      <p class="subtitle">For the person who deserves kindness, patience, and a thousand reasons to smile.</p>
+    </header>
+
+    <section class="card note">
+      <h2>Dear Lovely,</h2>
+      <p>I know I made you upset yesterday evening, and I am genuinely sorry for that.</p>
+      <p>I should have handled my anger better and thought about how my words and behaviour might make you feel. You didn't deserve that.</p>
+      <p>I don't want to make excuses. I just want you to know that <span class="highlight">your feelings matter to me</span>, and I will try to listen more, stay calm, and understand you instead of reacting in anger.</p>
+      <div class="divider">♡ &nbsp; ♡ &nbsp; ♡</div>
+      <p>I'm not expecting you to stop being upset instantly. Take the time you need. I just hope you can forgive me when you're ready.</p>
+      <p><span class="highlight">I'm really sorry, Lovely. 💜</span></p>
+      <div class="promise">
+        <div><b>🌷</b>More patience</div>
+        <div><b>🫶</b>More understanding</div>
+        <div><b>✨</b>Less anger, more care</div>
+      </div>
+    </section>
+
+    <section class="card question">
+      <h2>Can we make things okay again?</h2>
+      <p>No pressure to reply right away. I just wanted to make you a small reminder that I'm sorry.</p>
+      <div class="buttons">
+        <button class="yes" onclick="showReply()">Okay, let's talk 💜</button>
+        <button class="later" onclick="showLater()">I need a little time</button>
+      </div>
+      <div id="reply" role="status"></div>
+    </section>
+    <footer>Made especially for Lovely · with a little purple and a sincere sorry 💜</footer>
+  </main>
+  <script>
+    function showReply() {
+      const box = document.getElementById('reply');
+      box.style.display = 'block';
+      box.textContent = 'Thank you for giving me a chance, Lovely. I’ll listen properly. 💜';
+      burstHearts();
+    }
+    function showLater() {
+      const box = document.getElementById('reply');
+      box.style.display = 'block';
+      box.textContent = 'I understand. Take your time, Lovely. I’m sorry, and I’ll be here when you feel ready to talk. 💜';
+    }
+    function burstHearts() {
+      for (let i = 0; i < 14; i++) {
+        const el = document.createElement('span');
+        el.textContent = ['💜','♡','✨'][i % 3];
+        el.style.cssText = `position:fixed;left:${Math.random()*100}vw;top:${55+Math.random()*35}vh;z-index:5;pointer-events:none;font-size:${16+Math.random()*18}px;transition:all 1.4s ease;`;
+        document.body.appendChild(el);
+        requestAnimationFrame(() => { el.style.transform = `translateY(-${120+Math.random()*220}px) rotate(${Math.random()*70-35}deg)`; el.style.opacity = '0'; });
+        setTimeout(() => el.remove(), 1500);
+      }
+    }
+  </script>
+</body>
+</html>
